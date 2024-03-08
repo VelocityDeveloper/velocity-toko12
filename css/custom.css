@@ -1,0 +1,164 @@
+:root {
+    --color-theme: #20c1eb;
+    --bs-body-font-size: .85rem !important;
+    --bs-body-font-family: Arial, Helvetica, sans-serif !important;
+}
+:root[data-bs-theme=light] {
+    --bs-link-color: #333333 !important;
+    --bs-link-hover-color: var(--color-theme) !important;
+}
+:root[data-bs-theme=light] body {
+    color: var(--bs-dark);
+    background-color: var(--bs-secondary);
+    font-size: 0.9rem !important;
+    line-height: 1.25rem !important;
+}
+:root[data-bs-theme=light] .navbar-dark { --bs-navbar-color: rgb(255 255 255); }
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+small { font-size: .7rem !important; }
+#primary {
+    background-color: var(--bs-light);
+    padding: 15px;
+}
+#page-wrapper #content {
+    background-color: var(--bs-light);
+}
+.container { max-width: 945px !important; }
+
+.color-theme { color: var(--velocitytoko-color-main) !important; }
+
+.bg-theme { background-color: var(--velocitytoko-color-main) !important;}
+
+.btn-primary {
+    border-color: var(--velocitytoko-color-main) !important;
+    background-color: var(--velocitytoko-color-main) !important;
+}
+.border-theme { border-color: var(--velocitytoko-color-main) !important; }
+.wrapper {padding: 0 !important;}
+.bg-gray { background-color: #F0F0F0 !important;}
+.bg-gradients{
+    border: 1px solid #f0f0f0 !important;
+    background-color: #f7f7f7 !important;
+    background-image: linear-gradient(white, #f0f0f0) !important;
+}
+.header-top, .header-top a {
+    color: var(--bs-light);
+}
+.header-top .kontak-seller svg {
+    width: 12px;
+    height: 12px;
+}
+.title-single-part {
+    color: var(--velocitytoko-color-main);
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #f0f0f0 !important;
+    background-color: #f7f7f7 !important;
+    background-image: linear-gradient(white, #f0f0f0) !important;
+}
+.textwidget {
+    padding: .5rem;
+}
+.widget-area aside.widget {
+    /* padding: .8rem; */
+    border-radius: 5px;
+    background-color: var(--bs-light);
+    border: 1px solid #e6e6e6;
+}
+.widget-area aside.widget .widget-title {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--velocitytoko-color-main);
+    background-color: #f0f0f0;
+    padding: 0.5rem 0.75rem;
+    /* margin: -1rem -1rem 1rem; */
+}
+.footer-sidebar, .footer-sidebar a {
+    color: var(--bs-light);
+    border-color: var(--bs-light);
+}
+.footer-sidebar .widget-title {
+    color: var(--bs-light); !important;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+.pagi-home .page-numbers{
+    color: var(--velocitytoko-color-main);
+    background-color: var(--bs-light);
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 2px;
+}
+.vtoko-ekspedisi {
+    border-radius: 5px;
+    background-color: var(--bs-light);
+}
+.widget .offcanvas-body {
+    padding: 15px !important;
+}
+.vtoko-sosmed .h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.vtoko-sosmed svg {
+    width: 20px;
+    height: 20px;
+}
+.slick-prev {
+    left: 25px !important;
+    z-index: 99;
+}
+.slick-next {
+    right: 25px !important;
+    z-index: 99;
+}
+.slick-next::before, .slick-prev::before {display: none;}
+.slider-post .slick-arrow i {
+    font-size: 35px;
+    color: var(--bs-dark);
+}
+@media (min-width:769px) {
+    .widget-area.right-sidebar {
+        max-width: 26%;
+    }
+    .dropdown-menu {background-color: var(--bs-dark) !important;}
+    .dropdown-menu > li>a, .dropdown-menu > li>a:hover {
+        color: #fff;
+        font-size: 0.75rem;
+        background-color: transparent;
+    }
+    #main-menu > li > a {
+        padding: 0.5rem .75rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.75rem;
+        color: var(--bs-dark);
+        margin-right: 8px;
+        border-radius: 5px 5px 0 0;
+        background-color: var(--bs-light);
+    }
+    #second-menu > li > a {
+        padding: 0.5rem .75rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.75rem;
+        color: var(--bs-light);
+    }
+    #main-menu > li.current_page_item > a,
+    #main-menu > li.current-menu-item > a,
+    #main-menu > li > a:hover {
+        color: var(--velocitytoko-color-main);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .bg-sm-light {
+        --bs-bg-opacity: 1;
+        background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    }
+}
