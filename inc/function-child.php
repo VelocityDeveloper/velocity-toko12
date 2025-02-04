@@ -89,18 +89,20 @@ function velocitychild_theme_setup()
     ));
 }
 add_action('init', function () {
-    new Kirki\Field\Select(
-        [
-            'settings'    => 'slider_home',
-            'label'       => __('Kategori', 'justg'),
-            'section'     => 'section_homeweb',
-            'default'     => '',
-            'priority'    => 10,
-            'multiple'    => 1,
-            'placeholder' => __('Pilih kategori', 'justg'),
-            'choices'     => Kirki\Util\Helper::get_terms('category-product'),
-        ]
-    );
+    if (class_exists('Kirki')) {
+        new Kirki\Field\Select(
+            [
+                'settings'    => 'slider_home',
+                'label'       => __('Kategori', 'justg'),
+                'section'     => 'section_homeweb',
+                'default'     => '',
+                'priority'    => 10,
+                'multiple'    => 1,
+                'placeholder' => __('Pilih kategori', 'justg'),
+                'choices'     => Kirki\Util\Helper::get_terms('category-product'),
+            ]
+        );
+    }
 });
 
 
