@@ -22,6 +22,9 @@ $inc = get_stylesheet_directory() . '/inc';
 $includes = [
 	'enqueue.php',
 	'function-child.php',
+	'customizer.php',
+	'vd-store.php',
+	'popup.php',
 ];
 
 foreach ($includes as $include) {

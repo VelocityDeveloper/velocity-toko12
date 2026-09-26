@@ -33,7 +33,7 @@ $container = velocitytheme_option('justg_container_type', 'container');
                 ?>
 
                 <div class="card my-3 bg-gradients color-theme border-0 py-2 px-3 fs-6 fw-bold text-center">
-                    <?php echo get_option('blogname') . ' - ' . get_option('blogdescription'); ?>
+                    <?php echo esc_html(trim(get_option('blogname') . ' - ' . get_option('blogdescription'), ' -')); ?>
                 </div>
 
                 <?php

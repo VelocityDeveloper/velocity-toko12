@@ -1,8 +1,8 @@
 <div class="container bg-white">
     <?php if (has_header_image()) :
         echo '<div class="haeder-images">';
-        echo '<a class="d-block" href="' . get_home_url() . '">';
-        echo '<img class="w-100" src="' . esc_url(get_header_image()) . '" />';
+        echo '<a class="d-block" href="' . esc_url(home_url('/')) . '">';
+        echo '<img class="w-100" src="' . esc_url(get_header_image()) . '" alt="' . esc_attr(get_bloginfo('name')) . '" />';
         echo '</a>';
         echo '</div>';
     endif; ?>
@@ -11,11 +11,11 @@
 <?php require_once(get_stylesheet_directory() . '/inc/part-headertop.php'); ?>
 
 <div class="container px-0">
-    <?php $sitelogo = velocitytheme_option('custom_logo'); ?>
+    <?php $sitelogo = get_theme_mod('custom_logo'); ?>
     <div class="position-relative p-2 text-md-start text-center">
         <?php if ($sitelogo) : ?>
-            <a href="<?php echo get_home_url(); ?>">
-                <img src="<?php echo wp_get_attachment_image_url($sitelogo, 'full'); ?>" alt="Site Logo" loading="lazy">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+                <img class="img-fluid" src="<?php echo esc_url(wp_get_attachment_image_url($sitelogo, 'full')); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" loading="lazy">
             </a>
         <?php endif;  ?>
     </div>
